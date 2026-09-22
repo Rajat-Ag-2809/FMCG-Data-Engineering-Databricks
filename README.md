@@ -202,7 +202,7 @@ The project is organized into separate notebooks based on different processing r
 
 The final processed data is used to generate a business dashboard for analyzing FMCG data.
 
-![FMCG Dashboard](Dashboarding/fmcg_dashboard.pdf)
+![FMCG Dashboard](Dashboarding/fmcg_dashboard-1.png)
 
 ### Dashboard Focus
 
