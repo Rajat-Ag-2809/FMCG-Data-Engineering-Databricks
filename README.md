@@ -35,7 +35,6 @@ The project follows a **Medallion Architecture** to organize data processing int
 
 ### 🔄 High-Level Data Flow
 
-```text
                  Source Data
                      │
                      ▼
@@ -74,7 +73,6 @@ The project uses FMCG source data containing information related to:
 
 The source data contains both **full-load and incremental-load datasets**.
 
-```text
 Source Files
      │
      ├── Customer Data
