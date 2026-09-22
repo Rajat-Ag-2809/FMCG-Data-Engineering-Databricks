@@ -1,65 +1,65 @@
 # 🚀 FMCG Data Engineering Project | Databricks
 
+![Databricks](https://img.shields.io/badge/Databricks-Data%20Engineering-orange?logo=databricks)
+![PySpark](https://img.shields.io/badge/PySpark-Data%20Processing-orange?logo=apachespark)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![SQL](https://img.shields.io/badge/SQL-Data%20Transformation-blue)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-Cloud%20Storage-orange?logo=amazons3)
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Lakehouse-blue)
+
 ## 📌 Project Overview
 
 This project implements an **end-to-end FMCG Data Engineering pipeline using Databricks**.
 
-The solution demonstrates how data from multiple sources can be ingested, processed, transformed, and converted into analytics-ready datasets using a structured **Medallion Architecture**.
+The solution demonstrates how raw data from different sources can be ingested, processed, transformed, and converted into **analytics-ready business data** using the **Medallion Architecture (Bronze → Silver → Gold)**.
 
-The project includes **full-load and incremental data processing**, dimensional and fact data modeling, data transformations, and a final business dashboard for analytics.
+The project includes:
+
+- Cloud-based data storage using **Amazon S3**
+- Data ingestion and processing using **Databricks**
+- Data transformation using **PySpark and SQL**
+- Bronze, Silver, and Gold data layers
+- Dimension and Fact data modeling
+- Full-load and incremental-load processing
+- Delta-based data processing
+- Business-ready datasets
+- Final dashboard for analytics and reporting
 
 ---
 
-## 🏗️ Project Architecture
+# 🏗️ Solution Architecture
 
-The project follows a layered data engineering architecture to process data from source systems into business-ready datasets.
+The project follows a **Medallion Architecture** to organize data processing into multiple layers.
 
 ![Project Architecture](resources/project_architecture.png)
 
 ### 🔄 High-Level Data Flow
 
 ```text
-Source Data
-     │
-     ▼
-Data Ingestion
-     │
-     ▼
-┌───────────────┐
-│ Bronze Layer  │
-│ Raw Data      │
-└───────┬───────┘
-        │
-        ▼
-┌───────────────┐
-│ Silver Layer  │
-│ Cleaned Data  │
-└───────┬───────┘
-        │
-        ▼
-┌───────────────┐
-│ Gold Layer    │
-│ Business Data │
-└───────┬───────┘
-        │
-        ▼
-   Dashboard
-```
-
----
-
-# 🛠️ Technologies Used
-
-* **Databricks**
-* **Apache Spark / PySpark**
-* **SQL**
-* **Delta Lake**
-* **Python**
-* **Databricks Notebooks**
-* **Power BI / Dashboarding**
-* **Medallion Architecture**
-
----
+                 Source Data
+                     │
+                     ▼
+              Amazon S3 Storage
+                     │
+                     ▼
+               Databricks
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+     Bronze Layer          Data Processing
+          │                     │
+          └──────────┬──────────┘
+                     ▼
+               Silver Layer
+                     │
+                     ▼
+                Gold Layer
+                     │
+                     ▼
+             Business Analytics
+                     │
+                     ▼
+                Dashboard
 
 # 🔄 Data Engineering Workflow
 
