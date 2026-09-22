@@ -27,7 +27,7 @@ The project includes:
 
 ---
 
-# 🏗️ Solution Architecture
+## 🏗️ Solution Architecture
 
 The project follows a **Medallion Architecture** to organize data processing into multiple layers.
 
@@ -60,9 +60,9 @@ The project follows a **Medallion Architecture** to organize data processing int
                      ▼
                 Dashboard
 
-# 🔄 Data Engineering Workflow
+## 🔄 Data Engineering Workflow
 
-## 1. Data Ingestion
+### 1. Data Ingestion
 
 The project uses FMCG source data containing information related to:
 
@@ -82,7 +82,7 @@ Source Files
 
 ---
 
-# 🥉 2. Bronze Layer
+### 🥉 2. Bronze Layer
 
 The Bronze layer stores the ingested source data with minimal transformation.
 
@@ -98,11 +98,11 @@ The Bronze layer acts as the foundation for downstream processing.
 
 ---
 
-# 🥈 3. Silver Layer
+### 🥈 3. Silver Layer
 
 The Silver layer contains cleaned and transformed data.
 
-### Data processing includes:
+#### Data processing includes:
 
 * Data cleansing
 * Data type conversion
@@ -112,7 +112,7 @@ The Silver layer contains cleaned and transformed data.
 * Applying transformation logic
 * Preparing dimension and fact datasets
 
-### Dimension Processing
+#### Dimension Processing
 
 The project processes the following dimension data:
 
@@ -123,13 +123,13 @@ The project processes the following dimension data:
 
 ---
 
-# 🥇 4. Gold Layer
+###🥇 4. Gold Layer
 
 The Gold layer contains **business-ready datasets** designed for analytics and reporting.
 
 The processed dimension and fact data are combined and transformed to create datasets suitable for downstream analysis.
 
-### Key activities
+#### Key activities
 
 * Business transformations
 * Data aggregation
@@ -139,11 +139,11 @@ The processed dimension and fact data are combined and transformed to create dat
 
 ---
 
-# 🔁 Full Load & Incremental Load
+### 🔁 Full Load & Incremental Load
 
 One of the key components of this project is implementing both **full-load and incremental-load processing**.
 
-### Full Load
+#### Full Load
 
 The complete dataset is processed during the initial load.
 
@@ -155,7 +155,7 @@ Transformation
   ↓
 Target Table
 
-### Incremental Load
+#### Incremental Load
 
 Only newly arrived or changed data is processed during subsequent runs.
 
@@ -171,7 +171,7 @@ This approach helps reduce unnecessary processing when dealing with continuously
 
 ---
 
-# 📓 Databricks Notebooks
+## 📓 Databricks Notebooks
 
 The project is organized into separate notebooks based on different processing responsibilities.
 
@@ -198,7 +198,7 @@ The project is organized into separate notebooks based on different processing r
 
 ---
 
-# 📊 Dashboard
+## 📊 Dashboard
 
 The final processed data is used to generate a business dashboard for analyzing FMCG data.
 
@@ -219,7 +219,7 @@ It enables analysis of:
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 project-de-fmcg-atlikon/
 │
@@ -258,7 +258,7 @@ project-de-fmcg-atlikon/
 
 ---
 
-# 🔑 Key Data Engineering Concepts
+## 🔑 Key Data Engineering Concepts
 
 This project demonstrates practical implementation of:
 
@@ -280,7 +280,7 @@ This project demonstrates practical implementation of:
 
 ---
 
-# 🎯 Project Highlights
+## 🎯 Project Highlights
 
 ### End-to-End Pipeline
 
@@ -303,24 +303,3 @@ Processed customer, product, pricing, and date dimensions along with fact/order 
 Created a final dashboard using the processed business-ready data.
 
 ---
-
-# 📚 What I Learned
-
-Through this project, I gained practical experience in:
-
-* Building end-to-end data pipelines using Databricks.
-* Working with PySpark and SQL.
-* Implementing Medallion Architecture.
-* Processing full and incremental data loads.
-* Working with Delta Lake.
-* Designing fact and dimension data models.
-* Transforming raw data into analytics-ready datasets.
-* Connecting data engineering pipelines with business dashboards.
-
----
-
-# 📌 Reference
-
-This project was developed as a **learning project based on a Databricks FMCG Data Engineering tutorial** and was implemented to gain practical hands-on experience with modern data engineering concepts.
-
-[YouTube Tutorial](https://www.youtube.com/watch?v=U6ZUKWdfSLY)
