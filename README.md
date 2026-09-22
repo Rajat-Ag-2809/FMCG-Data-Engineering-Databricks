@@ -202,7 +202,7 @@ The project is organized into separate notebooks based on different processing r
 
 The final processed data is used to generate a business dashboard for analyzing FMCG data.
 
-![FMCG Dashboard](2_dashboarding/fmcg_dashboard.pdf)
+![FMCG Dashboard](Dashboarding/fmcg_dashboard.pdf)
 
 ### Dashboard Focus
 
@@ -216,45 +216,6 @@ It enables analysis of:
 * Pricing information
 * Order-related metrics
 * Business KPIs
-
----
-
-## 📁 Project Structure
-
-project-de-fmcg-atlikon/
-│
-├── 0_data/
-│   ├── 1_parent_company/
-│   │   ├── full_load/
-│   │   └── incremental_load/
-│   │
-│   └── 2_child_company/
-│       └── full_load/
-│
-├── 1_codes/
-│   ├── 1_setup/
-│   │   ├── setup_catalog.ipynb
-│   │   ├── utilities.ipynb
-│   │   └── dim_date_table_creation.ipynb
-│   │
-│   ├── 2_dimension_data_processing/
-│   │   ├── customers_data_processing.ipynb
-│   │   ├── products_data_processing.ipynb
-│   │   └── pricing_data_processing.ipynb
-│   │
-│   └── 3_fact_data_processing/
-│       ├── full_load_fact.ipynb
-│       └── incremental_load_fact.ipynb
-│
-├── 2_dashboarding/
-│   ├── denormalise_table_query_fmcg.txt
-│   └── fmcg_dashboard.pdf
-│
-├── resources/
-│   ├── project_architecture.png
-│   └── databricks_project.excalidraw
-│
-└── README.md
 
 ---
 
