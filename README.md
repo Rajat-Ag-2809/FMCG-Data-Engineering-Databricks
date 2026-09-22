@@ -60,6 +60,8 @@ The project follows a **Medallion Architecture** to organize data processing int
                      ▼
                 Dashboard
 
+---
+
 ## 🔄 Data Engineering Workflow
 
 ### 1. Data Ingestion
@@ -72,13 +74,6 @@ The project uses FMCG source data containing information related to:
 * Orders
 
 The source data contains both **full-load and incremental-load datasets**.
-
-Source Files
-     │
-     ├── Customer Data
-     ├── Product Data
-     ├── Pricing Data
-     └── Order Data
 
 ---
 
@@ -123,7 +118,7 @@ The project processes the following dimension data:
 
 ---
 
-###🥇 4. Gold Layer
+### 🥇 4. Gold Layer
 
 The Gold layer contains **business-ready datasets** designed for analytics and reporting.
 
