@@ -191,44 +191,18 @@ It enables analysis of:
 
 This project demonstrates practical implementation of:
 
-* ✅ Databricks
-* ✅ PySpark
-* ✅ SQL
-* ✅ Delta Lake
-* ✅ Lakehouse Architecture
-* ✅ Medallion Architecture
-* ✅ ETL / ELT
-* ✅ Full Load Processing
-* ✅ Incremental Load Processing
-* ✅ Dimension & Fact Data Modeling
-* ✅ Data Transformation
-* ✅ Data Cleaning
-* ✅ Data Validation
-* ✅ Data Aggregation
-* ✅ Business Intelligence
-
----
-
-## 🎯 Project Highlights
-
-### End-to-End Pipeline
-
-Designed a complete workflow from **source data ingestion to business analytics**.
-
-### Medallion Architecture
-
-Implemented **Bronze, Silver, and Gold layers** to organize data processing.
-
-### Incremental Processing
-
-Implemented incremental processing for order/fact data to handle newly arriving data efficiently.
-
-### Dimensional Modeling
-
-Processed customer, product, pricing, and date dimensions along with fact/order data.
-
-### Analytics
-
-Created a final dashboard using the processed business-ready data.
-
----
+*  Databricks
+*  PySpark
+*  SQL
+*  Delta Lake
+*  Lakehouse Architecture
+*  Medallion Architecture
+*  ETL / ELT
+*  Full Load Processing
+*  Incremental Load Processing
+*  Dimension & Fact Data Modeling
+*  Data Transformation
+*  Data Cleaning
+*  Data Validation
+*  Data Aggregation
+*  Business Intelligence
