@@ -79,7 +79,6 @@ Source Files
      ├── Product Data
      ├── Pricing Data
      └── Order Data
-```
 
 ---
 
@@ -148,7 +147,6 @@ One of the key components of this project is implementing both **full-load and i
 
 The complete dataset is processed during the initial load.
 
-```text
 Source
   ↓
 Full Dataset
@@ -156,13 +154,11 @@ Full Dataset
 Transformation
   ↓
 Target Table
-```
 
 ### Incremental Load
 
 Only newly arrived or changed data is processed during subsequent runs.
 
-```text
 New / Changed Data
         ↓
 Incremental Processing
@@ -170,7 +166,6 @@ Incremental Processing
 Transformation
         ↓
 Target Table
-```
 
 This approach helps reduce unnecessary processing when dealing with continuously arriving data.
 
@@ -182,30 +177,24 @@ The project is organized into separate notebooks based on different processing r
 
 ### Setup
 
-```text
 1_codes/
 └── 1_setup/
     ├── setup_catalog.ipynb
     ├── utilities.ipynb
     └── dim_date_table_creation.ipynb
-```
 
 ### Dimension Data Processing
 
-```text
 2_dimension_data_processing/
 ├── 1_customers_data_processing.ipynb
 ├── 2_products_data_processing.ipynb
 └── 3_pricing_data_processing.ipynb
-```
 
 ### Fact Data Processing
 
-```text
 3_fact_data_processing/
 ├── 1_full_load_fact.ipynb
 └── 2_incremental_load_fact.ipynb
-```
 
 ---
 
@@ -232,7 +221,6 @@ It enables analysis of:
 
 # 📁 Project Structure
 
-```text
 project-de-fmcg-atlikon/
 │
 ├── 0_data/
@@ -267,7 +255,6 @@ project-de-fmcg-atlikon/
 │   └── databricks_project.excalidraw
 │
 └── README.md
-```
 
 ---
 
