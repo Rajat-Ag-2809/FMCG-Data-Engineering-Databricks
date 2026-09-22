@@ -171,33 +171,6 @@ This approach helps reduce unnecessary processing when dealing with continuously
 
 ---
 
-## 📓 Databricks Notebooks
-
-The project is organized into separate notebooks based on different processing responsibilities.
-
-### Setup
-
-1_codes/
-└── 1_setup/
-    ├── setup_catalog.ipynb
-    ├── utilities.ipynb
-    └── dim_date_table_creation.ipynb
-
-### Dimension Data Processing
-
-2_dimension_data_processing/
-├── 1_customers_data_processing.ipynb
-├── 2_products_data_processing.ipynb
-└── 3_pricing_data_processing.ipynb
-
-### Fact Data Processing
-
-3_fact_data_processing/
-├── 1_full_load_fact.ipynb
-└── 2_incremental_load_fact.ipynb
-
----
-
 ## 📊 Dashboard
 
 The final processed data is used to generate a business dashboard for analyzing FMCG data.
