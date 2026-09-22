@@ -14,7 +14,7 @@ The project includes **full-load and incremental data processing**, dimensional 
 
 The project follows a layered data engineering architecture to process source data into business-ready datasets.
 
-![Project Architecture](resources/project_architecture.png)
+![Project Architecture](Resources/project_architecture.png)
 
 ### 🔄 High-Level Data Flow
 
