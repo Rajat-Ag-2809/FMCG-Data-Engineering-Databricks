@@ -31,7 +31,7 @@ The project includes:
 
 The project follows a **Medallion Architecture** to organize data processing into multiple layers.
 
-![Project Architecture](Resources/Databricks Medallion Architecture Flow.png)
+![Project Architecture](Resources/Architecture.png)
 
 ### 🔄 High-Level Data Flow
 
